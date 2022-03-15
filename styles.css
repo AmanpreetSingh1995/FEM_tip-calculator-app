@@ -17,6 +17,7 @@ body {
 .mainContainer {
 	background-color: #fff;
 	border-radius: 20px;
+	margin: 0 15px;
 }
 
 .topSection {
