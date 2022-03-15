@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+
+  <main class="main_container">
+
+    <header class="header">
+      <h1>SPLI</h1>
+      <h1>ITER</h1>
+    </header>
+
+    <section class="container">
+      <div class="card">
+        <div class="card_left">
+
+          <!-- Money Input -->
+
+          <div class="card_bill">
+            <h3 class="card_sub-heading ">Bill</h3>
+            <input type="text" name="money" id="money" class="card_input">
+          </div>
+
+          <!-- TIPS -->
+
+          <div class="card_tips">
+            <h3 class="card_sub-heading ">Select Tip %</h3>
+
+            <div class="card_tip">
+              <button class="btn">5%</button>
+              <button class="btn">10%</button>
+              <button class="btn">15%</button>
+            </div>
+
+            <div class="card_tip">
+              <button class="btn">25%</button>
+              <button class="btn">50%</button>
+              <input type="text" class="btn">
+              <!-- <button class="btn">
+              </button> -->
+            </div>
+          </div>
+
+          <!-- Number of people -->
+
+          <div class="card_people">
+            <h3 class=" card_sub-heading">Number of people</h3>
+            <input type="text" name="people" id="people" class="card_input">
+          </div>
+
+        </div>
+
+        <div class="card_right">
+
+          <div>
+
+            <div class="output">
+              <h4 class="heading">Tip amount <span>/ person</span></h4>
+              <h1 class="output_money" id=" output_tip">$0.00</h1>
+            </div>
+
+            <div class="output">
+              <h4 class="heading">Total <span>/ person</span></h4>
+              <h1 class="output_money" id="output_total">$0.00</h1>
+            </div>
+
+          </div>
+
+
+          <div>
+            <button class="button">reset</button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

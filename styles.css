@@ -1,0 +1,119 @@
+:root {
+	--white: hsl(0, 0%, 100%);
+
+	--strong-cyan: hsl(172, 67%, 45%); /*Text color on dark bg right side card*/
+	--very-dark-cyan: hsl(183, 100%, 15%); /* button bg and right side card bg*/
+	--light-grayish-cyan-1: hsl(185, 41%, 84%); /*main bg*/
+	--light-grayish-cyan-2: hsl(189, 41%, 97%); /*input field bg*/
+	--dark-grayish-cyan-1: hsl(186, 14%, 43%); /*dark text*/
+	--dark-grayish-cyan-2: hsl(184, 14%, 56%); /*light dark text*/
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/* overflow: hidden; */
+}
+.main_container {
+	background: var(--light-grayish-cyan-1);
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1.475rem;
+}
+
+.header {
+	padding: 1.5rem 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 16px;
+}
+
+.card {
+	width: 922px;
+	height: 456px;
+	padding: 0 1.125rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 18px;
+	background: var(--white);
+}
+
+.card_left {
+	height: 416px;
+	padding: 0.875rem 1.125rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.card_input {
+	height: 48px;
+	width: 380px;
+	margin-bottom: 32px;
+	border: none;
+	background: var(--light-grayish-cyan-2);
+}
+
+.card_sub-heading {
+	font-size: 16px;
+	padding-bottom: 14px;
+}
+
+.card_tips {
+	margin: 14px 0;
+}
+
+.card_tip {
+	margin-bottom: 16px;
+}
+
+.btn {
+	width: 118px;
+	height: 48px;
+	margin-right: 14px;
+}
+
+.card_right {
+	width: 412px;
+	height: 416px;
+	padding: 2.375rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 16px;
+	background: var(--very-dark-cyan);
+}
+
+.output {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.25rem 0;
+}
+
+.heading {
+	display: flex;
+	flex-direction: column;
+}
+
+.output_money {
+	font-size: 36px;
+	color: var(--strong-cyan);
+}
+
+.button {
+	width: 334px;
+	height: 48px;
+	text-transform: capitalize;
+	border-radius: 8px;
+	outline: none;
+	border: none;
+}
