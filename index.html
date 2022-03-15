@@ -8,6 +8,10 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Tip calculator app</title>
 
   <link rel="stylesheet" href="./styles.css">
@@ -15,86 +19,63 @@
 </head>
 
 <body>
+  <!-- HEADER SECTION STARTS -->
+  <div class="header">
+    <img src="./images/logo.svg" alt="logo" />
+  </div>
+  <!-- HEADER SECTION ENDS -->
 
-  <main class="main_container">
-
-    <header class="header">
-      <h1>SPLI</h1>
-      <h1>ITER</h1>
-    </header>
-
-    <section class="container">
-      <div class="card">
-        <div class="card_left">
-
-          <!-- Money Input -->
-
-          <div class="card_bill">
-            <h3 class="card_sub-heading ">Bill</h3>
-            <input type="text" name="money" id="money" class="card_input">
-          </div>
-
-          <!-- TIPS -->
-
-          <div class="card_tips">
-            <h3 class="card_sub-heading ">Select Tip %</h3>
-
-            <div class="card_tip">
-              <button class="btn">5%</button>
-              <button class="btn">10%</button>
-              <button class="btn">15%</button>
-            </div>
-
-            <div class="card_tip">
-              <button class="btn">25%</button>
-              <button class="btn">50%</button>
-              <input type="text" class="btn">
-              <!-- <button class="btn">
-              </button> -->
-            </div>
-          </div>
-
-          <!-- Number of people -->
-
-          <div class="card_people">
-            <h3 class=" card_sub-heading">Number of people</h3>
-            <input type="text" name="people" id="people" class="card_input">
-          </div>
-
-        </div>
-
-        <div class="card_right">
-
-          <div>
-
-            <div class="output">
-              <h4 class="heading">Tip amount <span>/ person</span></h4>
-              <h1 class="output_money" id=" output_tip">$0.00</h1>
-            </div>
-
-            <div class="output">
-              <h4 class="heading">Total <span>/ person</span></h4>
-              <h1 class="output_money" id="output_total">$0.00</h1>
-            </div>
-
-          </div>
-
-
-          <div>
-            <button class="button">reset</button>
-          </div>
-
-        </div>
-
+  <!-- MAIN CONTAINER STARTS -->
+  <div class="mainContainer">
+    <div class="topSection">
+      <div class="label">
+        <label for="input">Bill</label>
+      </div>
+      <div class="inputContainer">
+        <input type="number" placeholder="0.0" id="input">
+        <img src="./images/icon-dollar.svg" alt="dollar-icon" />
       </div>
 
-    </section>
+      <div class="label">
+        <label for="customTip">Select Tip %</label>
+      </div>
+      <div class="btnContainer">
+        <button class="btn">5%</button>
+        <button class="btn">10%</button>
+        <button class="btn active">15%</button>
+        <button class="btn">25%</button>
+        <button class="btn">50%</button>
+        <input type="number" placeholder="Custom" id="customTip" />
+      </div>
 
-  </main>
+      <div class="label">
+        <label for="people">Number of People</label>
+        <p id="error"></p>
+      </div>
+      <div class="peopleWrapper">
+        <input type="number" placeholder="1" id="people">
+        <img src="./images/icon-person.svg" alt="person">
+      </div>
 
+    </div>
 
+    <div class="bottomSection">
+      <div class="Amount">
+        <div class="desc">
+          <p>Tip Amount <br /> <span>/ person</span></p>
+          <div class="tipValue">$ 5</div>
+        </div>
+        <div class="desc">
+          <p>Total <br /> <span>/ person</span></p>
+          <div class="tipValue">$ 200</div>
+        </div>
+      </div>
+      <button class="reset">RESET</button>
+    </div>
 
-  <script src="./script.js"></script>
+  </div> <!-- MAIN CONTAINER ENDS -->
+
+  <script src="./index.js"></script>
 
 </body>
 
